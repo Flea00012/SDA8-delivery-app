@@ -50,7 +50,7 @@ The other pages for login are presently being built with a backend for Jhon Doe 
 
 ## Class Diagram
 
-![alt text](https://github.com/Flea00012/JavaLoggable/blob/master/Diagrams/Class%20Diagram-final.png)
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/React%20Delivery%20App%20(2).png)
 
 ## Contributing
 
@@ -64,4 +64,4 @@ MIT license applied to this project. Please view the link for further details.
 
 ## Disclaimer
 
-This is a refactored project, previously used for logging pets by the developer, and now is used for logging Banking data.
+This application is under construction and the Login and Sign Up features will be delivered in future.
