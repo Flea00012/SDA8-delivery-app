@@ -1,0 +1,15 @@
+:root {
+    --brand-colorHeader: #f88379;
+    --brand-colorFooter: red;
+    --brand-colorCupCakes: #faa8a1;
+    --brand-colorBigCakes: #fccdc9;
+
+    --font-sizeSmall: 10px;
+    --font-sizeMedium: 18px;
+    --font-sizeLarge: 50px;
+    --brand-textColor: rgb(63, 49, 49);
+    --space-big: 24px;
+    --space-medium: 18px;
+    --space-small: 10px;
+
+}

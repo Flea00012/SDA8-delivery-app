@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
+
+* {
+  font-family: Lato;
+  align-content: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+  background-color: #0492C2;
+  font: Lato;
+  color: black;
+  min-height: 10px;
+  top: 0px;
+  font-size: 20px;
+  width: 100%;
+
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    padding-top: 0px;
+    padding-left: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Lato;
+
+}
+
+p, div {
+  font-family: Lato;
+  font: black;
+  align-items: center;
+
+}
+
+.nav-links{
+  font: Lato;
+  color:  black;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.websiteStyle {
+  font: Lato;
+
+}
+
+.introStyle{
+  font: Lato;
+  background-color: #63C5DA;
+  padding: 20px;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding: 5px;
+    grid-auto-rows: minmax(auto, auto);
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 15px;
+
+}
+
+.packageStyle{
+  font: Lato;
+  background-color: #82EEFD;
+  padding: 20px;
+  grid-area: right;
+  height: 
+
+  display: grid;
+    grid-template-rows: auto auto;
+    padding: 5px;
+    grid-auto-rows: minmax(auto, auto);
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 15px;
+
+}
+
+.picture {
+  display: inline-block;
+  -ms-flex-align: center;
+  /* padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;*/
+  border-radius: 50%; 
+  width: 170px;
+  height: 170px;
+  
+
+
+  
+ 
+  
+
+}
+
+  .footer{
+
+    background-color: #0492C2;
+    color:black;
+    font-family: Lato;
+    font-size: 10px;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    
+  }
+
+.button {
+  background-color: #0492C2; /* Green */
+  border: none;
+  color: black;
+  margin: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+
+  @media (min-width: 750px) {
+
+    .websiteStyle {
+      
+      display: grid;
+      grid-template-areas: "left right";
+      grid-template-columns: 1fr 1fr;
+    
+    }
+
+
+    .picture {
+
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        margin-right: 10px;
+        align-items: center;
+
+    }
+
+
+}
