@@ -39,7 +39,7 @@ npm start
 ```
 The app should launch on port 3000.
 
-There are 3 pages for the application. The Home Page is where Jhon Doe will enter his name and when he clicks on the display packages button, he gets a list of all his packages.
+There are 3 pages for the application. The Home Page is where the user (Jhon Doe) will enter his/her name and when he/she clicks on the display packages button, he/she gets a list of all the packages. There are two more pages under-development: these are the Login Page, and the SignUp page. These require a backend to be built and will be done in NodeJS or Java Spring.
 
 
 ## Features
