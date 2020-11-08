@@ -17,6 +17,11 @@ A company wants their user Jhon Doe, to find his packages on their website. They
 
 ## Initial concept design in Figma
 
+The design is mobile first and below are images of the mobile and the website design as a concept. Note this is different to the final design displayed above due to changes in later development stages.
+
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/MobileDesign.png)
+
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/DesktopDesign.png)
 
 
 # Usage
