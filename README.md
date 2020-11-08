@@ -10,6 +10,14 @@ A delivery app for user Jhon Doe to search for his packages that are to be deliv
 
 A company wants their user Jhon Doe, to find his packages on their website. They want the application written in React with the latest technologies. The app displays the deliveries for the user after he enters his name.
 
+## UI and Layout
+
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/AppUI.png)
+
+
+## Initial concept design in Figma
+
+
 
 # Usage
 
