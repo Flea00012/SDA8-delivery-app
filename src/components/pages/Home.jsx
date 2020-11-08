@@ -49,68 +49,66 @@ export default function Home() {
   }, [user]);
 
   return (
-    <>
-      <div className="websiteStyle">
-        <div className="introStyle">
-          <div>
-            <h2> Welcome to Express Delivery </h2>
-          </div>
-          <div>
-            <p>
-              {' '}
-              If you are expecting a delivery please enter your name and click
-              the display packages button{' '}
-            </p>
-          </div>
-          <div>
-            <img
-              className="picture"
-              src={logo}
-              alt="a logo for the transport company called express delivery"
-            />
-          </div>
-          <div>
-            <p> Please enter the name of the package owner </p>
-          </div>
-          <div>
-            <input ref={inputUser} placeholder="try: Jhon Doe" />
-            <button
-              className="button"
-              onClick={() => {
-                const enteredUser = inputUser.current.value;
-                setUser(enteredUser);
-              }}
-            >
-              {' '}
-              display packages{' '}
-            </button>
-          </div>
+    <div className="websiteStyle">
+      <div className="introStyle">
+        <div>
+          <h2> Welcome to Express Delivery </h2>
         </div>
-
-        <div className="packageStyle">
-          <div>
-            <h3>Packages will be displayed here: </h3>
-            <hr />
-          </div>
-
-          <div>
-            {status === 0 ? <p>Loading...</p> : null}
-            {status === 1 &&
-              information &&
-              information.map((item) => {
-                return (
-                  <div key={item.id}>
-                    {`Package status is ${item.status}
-                    for package with waybill number ${item.id} and its location 
-                    is ${item.location_name} and time of delivery is ${item.eta} `}
-                    <p></p>
-                  </div>
-                );
-              })}
-            {status === 2 ? <p>Sorry we cannot find your package</p> : null}
-          </div>
+        <div>
+          <p>
+            {' '}
+            If you are expecting a delivery please enter your name and click the
+            display packages button{' '}
+          </p>
+        </div>
+        <div>
+          <img
+            className="picture"
+            src={logo}
+            alt="a logo for the transport company called express delivery"
+          />
+        </div>
+        <div>
+          <p> Please enter the name of the package owner </p>
+        </div>
+        <div>
+          <input ref={inputUser} placeholder="try: Jhon Doe" />
+          <button
+            className="button"
+            onClick={() => {
+              const enteredUser = inputUser.current.value;
+              setUser(enteredUser);
+            }}
+          >
+            {' '}
+            display packages{' '}
+          </button>
         </div>
       </div>
-    </>
+
+      <div className="packageStyle">
+        <div>
+          <h3>Packages will be displayed here: </h3>
+          <hr />
+        </div>
+
+        <div>
+          {status === 0 ? <p>Loading...</p> : null}
+          {status === 1 &&
+            information &&
+            information.map((item) => {
+              return (
+                <div key={item.id}>
+                  {`Package status is ${item.status}
+                    for package with waybill number ${item.id} and its location 
+                    is ${item.location_name} and time of delivery is ${item.eta}`}
+                  <p></p>
+                </div>
+              );
+            })}
+          {status === 2 ? <p>Sorry we cannot find your package</p> : null}
+        </div>
+      </div>
+    </div>
   );
 }
