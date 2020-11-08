@@ -48,6 +48,16 @@ The application can show the packages belonging to Jhon Doe along with informati
 
 The other pages for login are presently being built with a backend for Jhon Doe to login and also sign up if he wants to register again.
 
+## React Libraries
+
+The application was made using the core "react" modules and functional components only. However the "react-router-dom" module was also installed to allow routing between the pages of the website. The "react-router-dom" can be installed as follows:
+
+```bash
+
+npm install --save react-router-dom
+
+```
+
 ## Class Diagram
 
 ![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/React%20Delivery%20App%20(2).png)
