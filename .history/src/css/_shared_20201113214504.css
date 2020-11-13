@@ -138,9 +138,11 @@ p, div {
     
     }
 
-    p {
-      
-      font-size: x-large;
+    p, {
+      font-family: Lato;
+      font: black;
+      align-items: center;
+      font-size: large;
     
     }
 

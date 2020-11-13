@@ -73,7 +73,7 @@ export default function Home() {
         <div>
           <input
             ref={inputUser}
-            placeholder={status === 1 ? 'try: Jhon Doe' : { save }}
+            placeholder={status == 0 ? 'try: Jhon Doe' : { save }}
           />
           <button
             className="button"

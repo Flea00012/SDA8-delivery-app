@@ -71,10 +71,7 @@ export default function Home() {
           <p> Please enter the name of the package owner </p>
         </div>
         <div>
-          <input
-            ref={inputUser}
-            placeholder={status === 1 ? 'try: Jhon Doe' : { save }}
-          />
+          <input ref={inputUser} placeholder={"try: Jhon Doe" }/>
           <button
             className="button"
             onClick={() => {

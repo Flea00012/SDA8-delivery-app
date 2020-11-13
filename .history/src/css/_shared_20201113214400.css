@@ -40,7 +40,7 @@ p, div {
   font-family: Lato;
   font: black;
   align-items: center;
-  font-size: large;
+  font
 
 }
 
@@ -135,12 +135,6 @@ p, div {
       
       display: grid;
       grid-template-columns: 1fr 1fr;
-    
-    }
-
-    p {
-      
-      font-size: x-large;
     
     }
 

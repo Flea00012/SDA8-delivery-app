@@ -20,6 +20,7 @@ export default function Home() {
 
   //note status 0: means loading data, status 1: means data found, status 2: means data not found
   useEffect(() => {
+   
     async function fetchData() {
       try {
         setStatus(0);
@@ -45,13 +46,17 @@ export default function Home() {
       // here use the comparator to get the specific package id
     }
     fetchData();
+
+    return () => {
+     
+    };
   }, [user]);
 
   return (
     <div className="websiteStyle">
       <div className="introStyle">
         <div>
-          <h2> {`Welcome to Express Delivery ${save}`}</h2>
+          <h2> Welcome to Express Delivery </h2>
         </div>
         <div>
           <p>
@@ -71,16 +76,12 @@ export default function Home() {
           <p> Please enter the name of the package owner </p>
         </div>
         <div>
-          <input
-            ref={inputUser}
-            placeholder={status === 1 ? 'try: Jhon Doe' : { save }}
-          />
+          <input ref={inputUser} placeholder="try: Jhon Doe" />
           <button
             className="button"
             onClick={() => {
               const enteredUser = inputUser.current.value;
               setUser(enteredUser);
-              setSave(enteredUser);
             }}
           >
             {' '}
