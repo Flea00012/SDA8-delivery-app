@@ -1,9 +1,6 @@
 //react core
 import { useEffect, useState, useRef } from 'react';
 
-//custom hooks
-import useLocalStorage from '../atoms/useLocalStorage';
-
 //import styles and pictures
 import logo from '../../artwork/markus-spiske-BPxkU4uPq6Y-unsplash.jpg';
 import '../../css/styles.css';
@@ -16,10 +13,9 @@ export default function Home() {
   const [user, setUser] = useState(null);
   const inputUser = useRef();
 
-  const [save, setSave] = useLocalStorage('', '');
-
   //note status 0: means loading data, status 1: means data found, status 2: means data not found
   useEffect(() => {
+    let isActive = true;
     async function fetchData() {
       try {
         setStatus(0);
@@ -45,13 +41,17 @@ export default function Home() {
       // here use the comparator to get the specific package id
     }
     fetchData();
+
+    return () => {
+      isActive = false;
+    };
   }, [user]);
 
   return (
     <div className="websiteStyle">
       <div className="introStyle">
         <div>
-          <h2> {`Welcome to Express Delivery ${save}`}</h2>
+          <h2> Welcome to Express Delivery </h2>
         </div>
         <div>
           <p>
@@ -71,16 +71,12 @@ export default function Home() {
           <p> Please enter the name of the package owner </p>
         </div>
         <div>
-          <input
-            ref={inputUser}
-            placeholder={status === 1 ? 'try: Jhon Doe' : { save }}
-          />
+          <input ref={inputUser} placeholder="try: Jhon Doe" />
           <button
             className="button"
             onClick={() => {
               const enteredUser = inputUser.current.value;
               setUser(enteredUser);
-              setSave(enteredUser);
             }}
           >
             {' '}
