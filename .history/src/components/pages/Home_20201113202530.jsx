@@ -88,8 +88,7 @@ export default function Home() {
 
       <div className="packageStyle">
         <div>
-          <h3>Package display area: </h3>
-          <hr />
+          <h3>Packages will be displayed here: </h3>
           <hr />
         </div>
 
@@ -100,15 +99,11 @@ export default function Home() {
             information.map((item, count) => {
               return (
                 <div key={item.id}>
-                  {`# ${count} - Package status is: ${item.status} `}
+                  {`# ${count} - Package status is ${item.status} `}
                   <p></p>
-                  {`Waybill number is: ${item.id}  `}
+                    {`package with waybill number ${item.id} and its location 
+                    is ${item.location_name} and time of delivery is ${item.eta}`}
                   <p></p>
-                  {`Present Location is: ${item.location_name} `}
-                  <p></p>
-                  {`Time of delivery is ${item.eta}`}
-                  <p></p>
-                  <hr />
                 </div>
               );
             })}

@@ -88,7 +88,7 @@ export default function Home() {
 
       <div className="packageStyle">
         <div>
-          <h3>Package display area: </h3>
+          <h3>Packages display area: </h3>
           <hr />
           <hr />
         </div>

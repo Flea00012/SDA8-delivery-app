@@ -95,8 +95,8 @@ p, div {
   -ms-flex-align: center;
 
   border-radius: 50%; 
-  width: 220px;
-  height: 220px;
+  width: 0px;
+  height: 170px;
   
 
 }
@@ -145,8 +145,8 @@ p, div {
         padding-bottom: 50px;
         padding-top: 50px;
         border-radius: 50%;
-        width: 420px;
-        height: 420px;
+        width: 500px;
+        height: 500px;
         margin-right: 10px;
         align-items: center;
 

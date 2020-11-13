@@ -1,5 +1,6 @@
 //react core
 
+
 import { useEffect, useState, useRef } from 'react';
 
 //import styles and pictures
@@ -88,8 +89,7 @@ export default function Home() {
 
       <div className="packageStyle">
         <div>
-          <h3>Package display area: </h3>
-          <hr />
+          <h3>Packages will be displayed here: </h3>
           <hr />
         </div>
 
@@ -97,18 +97,13 @@ export default function Home() {
           {status === 0 ? <p>Loading...</p> : null}
           {status === 1 &&
             information &&
-            information.map((item, count) => {
+            information.map((item) => {
               return (
                 <div key={item.id}>
-                  {`# ${count} - Package status is: ${item.status} `}
+                  {`Package status is ${item.status}
+                    for package with waybill number ${item.id} and its location 
+                    is ${item.location_name} and time of delivery is ${item.eta}`}
                   <p></p>
-                  {`Waybill number is: ${item.id}  `}
-                  <p></p>
-                  {`Present Location is: ${item.location_name} `}
-                  <p></p>
-                  {`Time of delivery is ${item.eta}`}
-                  <p></p>
-                  <hr />
                 </div>
               );
             })}
