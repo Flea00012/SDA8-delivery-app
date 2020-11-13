@@ -10,6 +10,19 @@ A delivery app for user Jhon Doe to search for his packages that are to be deliv
 
 A company wants their user Jhon Doe, to find his packages on their website. They want the application written in React with the latest technologies. The app displays the deliveries for the user after he enters his name.
 
+## UI and Layout
+
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/AppUI.png)
+
+
+## Initial concept design in Figma
+
+The design is mobile first and below are images of the mobile and the website design as a concept. Note this is different to the final design displayed above due to changes in later development stages.
+
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/MobileDesign.png)
+
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/DesktopDesign.png)
+
 
 # Usage
 
@@ -26,7 +39,7 @@ npm start
 ```
 The app should launch on port 3000.
 
-There are 3 pages for the application. The Home Page is where Jhon Doe will enter his name and when he clicks on the display packages button, he gets a list of all his packages.
+There are 3 pages for the application. The Home Page is where the user (Jhon Doe) will enter his/her name and when he/she clicks on the display packages button, he/she gets a list of all the packages. There are two more pages under-development: these are the Login Page, and the SignUp page. These require a backend to be built and will be done in NodeJS or Java Spring.
 
 
 ## Features
@@ -35,9 +48,19 @@ The application can show the packages belonging to Jhon Doe along with informati
 
 The other pages for login are presently being built with a backend for Jhon Doe to login and also sign up if he wants to register again.
 
+## React Libraries
+
+The application was made using the core "react" modules and functional components only. However the "react-router-dom" module was also installed to allow routing between the pages of the website. The "react-router-dom" can be installed as follows:
+
+```bash
+
+npm install --save react-router-dom
+
+```
+
 ## Class Diagram
 
-![alt text](https://github.com/Flea00012/JavaLoggable/blob/master/Diagrams/Class%20Diagram-final.png)
+![alt text](https://github.com/Flea00012/SDA8-delivery-app/blob/main/src/artwork/React%20Delivery%20App%20(2).png)
 
 ## Contributing
 
@@ -51,4 +74,4 @@ MIT license applied to this project. Please view the link for further details.
 
 ## Disclaimer
 
-This is a refactored project, previously used for logging pets by the developer, and now is used for logging Banking data.
+This application is under construction and the Login and Sign Up features will be delivered in future.
