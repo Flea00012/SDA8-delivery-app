@@ -9,7 +9,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  align-items:  center;
+  align-items: center;
   background-color: var(--brand-colorNavBar);
   font: Lato;
   color: black;
@@ -18,35 +18,31 @@ nav {
   font-size: 20px;
   width: 100%;
   /* margin-bottom: 5px; */
-
 }
-
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-
-    padding-top: 0px;
-    padding-left: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Lato;
-
+  padding-top: 0px;
+  padding-left: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Lato;
 }
 
-p, div {
+p,
+div {
   font-family: Lato;
   font: black;
   align-items: center;
   font-size: large;
-
 }
 
-.nav-links{
+.nav-links {
   font: Lato;
-  color:  black;
+  color: black;
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -56,68 +52,69 @@ p, div {
 
 .websiteStyle {
   font: Lato;
-
 }
 
-.introStyle{
+.introStyle {
   font: Lato;
   background-color: var(--brand-colorIntroSection);
   padding: 20px;
   height: 100%;
 
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto;
-    padding: 5px;
-    grid-auto-rows: minmax(auto, auto);
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 15px;
-
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  padding: 5px;
+  grid-auto-rows: minmax(auto, auto);
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 
-.packageStyle{
+.packageStyle {
   font: Lato;
   background-color: var(--brand-colorPackageSection);
   padding: 20px;
   height: 100%;
 
-    display: grid;
-    grid-template-rows: auto auto;
-    padding: 5px;
-    grid-auto-rows: minmax(auto, auto);
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 15px;
+  display: grid;
+  grid-template-rows: auto auto;
+  padding: 5px;
+  grid-auto-rows: minmax(auto, auto);
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
 
+.deliveries {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding-right: 25px;
 }
 
 .picture {
   display: inline-block;
   -ms-flex-align: center;
 
-  border-radius: 50%; 
+  border-radius: 50%;
   width: 220px;
   height: 220px;
-  
-
 }
 
-  .footer{
-
-    background-color: #0492C2;
-    color:black;
-    font-family: Lato;
-    font-size: 10px;
-    padding: 10px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: fixed;
-    
-  }
+.footer {
+  background-color: #0492c2;
+  color: black;
+  font-family: Lato;
+  font-size: 10px;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+}
 
 .button {
-  background-color: #0492C2;
+  background-color: #0492c2;
   border: none;
   color: black;
   margin: 20px;
@@ -128,36 +125,33 @@ p, div {
   font-size: 15px;
 }
 
+@media (min-width: 750px) {
+  .deliveries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    padding-right: 25px;
+  }
 
-  @media (min-width: 750px) {
+  .websiteStyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .websiteStyle {
-      
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    
-    }
+  p {
+    font-size: x-large;
+  }
 
-    p {
-      
-      font-size: x-large;
-    
-    }
-
-
-    .picture {
-
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        border-radius: 50%;
-        width: 420px;
-        height: 420px;
-        margin-right: 10px;
-        align-items: center;
-
-    }
-
-
+  .picture {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 50%;
+    width: 420px;
+    height: 420px;
+    margin-right: 10px;
+    align-items: center;
+  }
 }

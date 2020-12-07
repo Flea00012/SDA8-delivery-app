@@ -3,6 +3,8 @@
 //react core
 import { Link } from 'react-router-dom';
 
+import Button from '@material-ui/core/Button';
+
 //import styles
 import '../../css/styles.css';
 
@@ -11,20 +13,18 @@ import '../../css/styles.css';
 //navigation bar component
 export default function Nav() {
   return (
-    <nav>
-      <ul className="nav-links">
-        <Link to="/home">
-          <li>Home</li>
-        </Link>
+    <>
+      <Link to="/home">
+        <Button variant="text">Home</Button>
+      </Link>
 
-        <Link to="/login">
-          <li>Login</li>
-        </Link>
+      <Link to="/login">
+        <Button>Login</Button>
+      </Link>
 
-        <Link to="/signup">
-          <li>Sign Up</li>
-        </Link>
-      </ul>
-    </nav>
+      <Link to="/signup">
+        <Button>Sign Up</Button>
+      </Link>
+    </>
   );
 }
