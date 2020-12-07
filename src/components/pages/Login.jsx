@@ -1,32 +1,27 @@
-//react core
+import React from 'react';
+import { useForm } from 'react-hook-form';
 
-//import styles
-import image from '../../artwork/7028de95-3f1c-4817-ac8e-846941592c57_200x200.png';
-import '../../css/styles.css';
+export default function LoginPage() {
+  const { register, handleSubmit, errors } = useForm();
 
-export default function Login() {
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
-    <>
-      <div className="packageStyle">
-        <div>
-          <h2> Welcome to Express Delivery </h2>
-          <p>
-            {' '}
-            If you already have a login name and password, please enter the site {' '}
-          </p>
-
-          <h1> Please note our Login Page is under construction. coming soon.  </h1>
-        </div>
-        <div>
-          <img
-            className="picture"
-            src={image}
-            alt="a package is delivered to the client "
-          />
-          <p> Please enter your name and phone number to login</p>
-          <input placeholder="name" /> <input placeholder="phone number" />{' '}
-        </div>
-      </div>
-    </>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input type="text" placeholder="Email" name="email" ref={register} />
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        ref={register({
+          required: 'PASSWORD REQUIRED',
+          minLength: { value: 8, message: 'TOO SHORT' },
+        })}
+      />
+      {errors.password && <p>{errors.password.message}</p>}
+      <input type="submit" />
+    </form>
   );
 }
